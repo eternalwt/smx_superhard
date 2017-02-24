@@ -607,9 +607,12 @@ h1, h2, h3, h4, h5, h6, figure {
   height: auto;
   position: relative;
 }
-.features .col-half,
+.features .col-half {
+  width: 40%;
+  float: left;
+}
 .features .col-half-image-holder {
-  width: 50%;
+  width: 60%;
   float: left;
 }
 @media screen and (max-width: 768px) {

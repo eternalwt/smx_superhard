@@ -40,8 +40,16 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 
+	<script type="text/javascript" src="http://api.go2map.com/maps/js/api_v2.5.1.js"></script>
+	<script type="text/javascript">
+		function initialize()
+		{
+			var map = new sogou.maps.Map(document.getElementById("map_canvas"),{});
+		}
+	</script>
+
 	</head>
-	<body>
+	<body onload="initialize()">
 		
 	<div class="fh5co-loader"></div>
 	
@@ -55,12 +63,12 @@
 						<li class="has-dropdown">
 							<a href="product.html">Products</a>
 							<ul class="dropdown">
-								<li><a href="products/1.html">Silicon PCD</a></li>
-								<li><a href="products/2.html">Cobalt PCD Supported &Unsupported</a></li>
-								<li><a href="products/3.html">Diamond cemented carbide composite</a></li>
-								<li><a href="products/4.html">Wire Drawing Die</a></li>
-								<li><a href="products/5.html">Multi blade diamond micro-powder</a></li>
-								<li><a href="products/6.html">Multi blade diamond polishing slurry, polishing paste</a></li>
+								<li><a href="product1.html">Silicon PCD</a></li>
+								<li><a href="product2.html">Cobalt PCD Supported &Unsupported</a></li>
+								<li><a href="product3.html">Diamond cemented carbide composite</a></li>
+								<li><a href="product4.html">Wire Drawing Die</a></li>
+								<li><a href="product5.html">Multi blade diamond micro-powder</a></li>
+								<li><a href="product6.html">Multi blade diamond polishing slurry, polishing paste</a></li>
 							</ul>
 						</li>
 						<li><a href="services.html">R&D</a></li>
@@ -106,15 +114,12 @@
 					<div class="col-half animate-box" data-animate-effect="fadeInLeft">
 						<div class="table-c">
 							<div class="desc">
-								<span>Try Our Awesome Stuff</span>
 								<h3>Made in China</h3>
-								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics.</p>
-								<p><a href="#" class="btn btn-lg btn-primary">Learn More</a></p>
 							</div>
 						</div>
 					</div>
-					<div class="col-half-image-holder animate-box" data-animate-effect="fadeInRight">
-						<img class="img-responsive" src="images/samsungs6.png" alt="samsung">
+					<div id="map_canvas" class="col-half-image-holder animate-box" data-animate-effect="fadeInRight">
+						<!-- <img class="img-responsive" src="images/samsungs6.png" alt="samsung"> -->
 					</div>
 				</div>
 			</div>
@@ -137,21 +142,21 @@
 					<div class="project-grid" style="background-image:url(images/product/product-1.png);">
 						<div class="desc">
 							<span>product name</span>
-							<h3><a href="products/1.html">Silicon PCD</a></h3>
+							<h3><a href="product1.html">Silicon PCD</a></h3>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4 animate-box">
 					<div class="project-grid" style="background-image:url(images/product/product-2.jpg);">
 						<div class="desc">
-							<h3><a href="products/2.html">Cobalt PCD Supported &Unsupported</a></h3>
+							<h3><a href="product2.html">Cobalt PCD Supported &Unsupported</a></h3>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4 animate-box">
 					<div class="project-grid" style="background-image:url(images/product/product-3.png);">
 						<div class="desc">
-							<h3><a href="products/3.html">Diamond cemented carbide composite</a></h3>
+							<h3><a href="product3.html">Diamond cemented carbide composite</a></h3>
 						</div>
 					</div>
 				</div>
@@ -159,21 +164,21 @@
 					<div class="project-grid" style="background-image:url(images/product/product-4.png);">
 						<div class="desc">
 							<span>product name</span>
-							<h3><a href="products/4.html">Wire Drawing Die</a></h3>
+							<h3><a href="product4.html">Wire Drawing Die</a></h3>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4 animate-box">
 					<div class="project-grid" style="background-image:url(images/product/product-5.jpg);">
 						<div class="desc">
-							<h3><a href="products/5.html">Multi blade diamond micro-powder</a></h3>
+							<h3><a href="product5.html">Multi blade diamond micro-powder</a></h3>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4 animate-box">
 					<div class="project-grid" style="background-image:url(images/product/product-6.jpg);">
 						<div class="desc">
-							<h3><a href="products/6.html">Multi blade diamond polishing slurry, polishing paste</a></h3>
+							<h3><a href="product6.html">Multi blade diamond polishing slurry, polishing paste</a></h3>
 						</div>
 					</div>
 				</div>
