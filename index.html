@@ -42,9 +42,15 @@
 
 	<script type="text/javascript" src="http://api.go2map.com/maps/js/api_v2.5.1.js"></script>
 	<script type="text/javascript">
+		var myOptions = {
+			zoom: 10,
+			center: new sogou.maps.Point(12956000,4824875)
+		};
 		function initialize()
 		{
+			//var map = new sogou.maps.Map(document.getElementById("map_canvas", myOptions),{});
 			var map = new sogou.maps.Map(document.getElementById("map_canvas"),{});
+			map.setCenter(new sogou.maps.Point(12377750,4109750),10);
 		}
 	</script>
 
@@ -107,19 +113,20 @@
 		</div>
 	</header>
 
-	<div id="fh5co-core-feature">
+	<div id="fh5co-core-feature1">
 		<div class="container">
 			<div class="row">
 				<div class="features">
-					<div class="col-half animate-box" data-animate-effect="fadeInLeft">
+					<div id="map_canvas" class="col-half-image-holder animate-box" data-animate-effect="fadeInLeft">
+
+					</div>
+					<div class="col-half animate-box" data-animate-effect="fadeInRight">
+						<!-- <img class="img-responsive" src="images/samsungs6.png" alt="samsung"> -->
 						<div class="table-c">
 							<div class="desc">
 								<h3>Made in China</h3>
 							</div>
 						</div>
-					</div>
-					<div id="map_canvas" class="col-half-image-holder animate-box" data-animate-effect="fadeInRight">
-						<!-- <img class="img-responsive" src="images/samsungs6.png" alt="samsung"> -->
 					</div>
 				</div>
 			</div>

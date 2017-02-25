@@ -594,6 +594,17 @@ h1, h2, h3, h4, h5, h6, figure {
   }
 }
 
+#fh5co-core-feature1 {
+  padding-top: 2em;
+  clear: both;
+}
+@media screen and (max-width: 768px) {
+  #fh5co-core-feature1 {
+    padding-top: 1em;
+    padding-bottom: 0em;
+  }
+}
+
 .features {
   display: -webkit-box;
   display: -moz-box;
